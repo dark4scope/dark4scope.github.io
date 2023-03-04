@@ -1,0 +1,968 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="darkscope">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="日拱一卒">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="日拱一卒">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="darkscope">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>日拱一卒</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-top"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-books"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="日拱一卒"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/09/05/%E8%BD%AC%E8%BD%BD-%E3%80%8A%E8%A7%A6%E6%A8%A1%E8%87%AA%E5%B7%B1%E3%80%8B%E4%B8%80%E6%B3%B0%E6%88%88%E5%B0%94/" target="_self">
+          转载-《触模自己》一泰戈尔
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/09/05/%E8%BD%AC%E8%BD%BD-%E3%80%8A%E8%A7%A6%E6%A8%A1%E8%87%AA%E5%B7%B1%E3%80%8B%E4%B8%80%E6%B3%B0%E6%88%88%E5%B0%94/" target="_self">
+        <div>
+          你靠什么谋生，我不感兴趣。我想知道你渴望什么，你是不是敢梦想你心中的渴望。 你几岁，我不感兴趣。我想知道你愿不愿意冒险，即使看起来像傻瓜，为了爱，为了你的梦想，为了生命的奇遇。 什么星球跟你的月亮平行，我不感兴趣;我想知道你是否触摸到自己的核心;你是否会因为惧怕更多伤痛，面对生命的背叛变得枯萎。 我想知道你是不是能跟痛苦共处，而不想去隐藏它、消除它、整修它。 我想知道你是不是能跟喜悦共处，你是不是
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-09-05 23:51" pubdate>
+              2022-09-05
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%BB%E4%B9%A6/" class="category-chain-item">读书</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%BD%AC%E8%BD%BD/">#转载</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/05/02/%E6%9D%82%E8%B0%88-%E5%9C%B0%E8%A1%A8%E6%B8%B8%E8%AE%B0-%E6%88%90%E9%83%BD%E8%87%B3%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%96/" target="_self">
+          地表游记-成都至茶卡盐湖
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/05/02/%E6%9D%82%E8%B0%88-%E5%9C%B0%E8%A1%A8%E6%B8%B8%E8%AE%B0-%E6%88%90%E9%83%BD%E8%87%B3%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%96/" target="_self">
+        <div>
+          要离开成都的时候，想出去走走。登山装备还未到，四姑娘山无法成行。随机选择降落点—茶卡盐湖。在一嗨租车租了车，不得不称赞这个新款车音响不错，苏打绿的歌声陪伴了我一路。 全程三天挨饿受冻，但也不能和红军爬雪山、过草地比较万一。一千八百公里，清醒时就赶路，并对抗天气、路况和孤独。见证了诸多天气、植被、美景和辽阔天地。 第一天晚上9点出发，赶路至凌晨2点，停车在国道边休息。对野外过夜没有经验，凌晨五点被冻
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-05-02 23:51" pubdate>
+              2022-05-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%9D%82%E8%B0%88/" class="category-chain-item">杂谈</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AA%E4%BA%BA/">#个人</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/02/15/%E8%AF%BB%E4%B9%A6-%E6%99%AE%E6%9E%97%E6%96%AF%E9%A1%BF%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%85%AC%E5%BC%80%E8%AF%BE/" target="_self">
+          读书-普林斯顿计算机公开课
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/02/15/%E8%AF%BB%E4%B9%A6-%E6%99%AE%E6%9E%97%E6%96%AF%E9%A1%BF%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%85%AC%E5%BC%80%E8%AF%BE/" target="_self">
+        <div>
+          作者是我喜欢的那种大科学家，对技术发展有深刻、全面而系统的认识，对技术的影响，信息安全，伦理都有深刻的认识。这本书给我一个宏大和全面的视角看待计算机和通信领域的技术基础和社会影响。我和作者之间的差距是十万八千里吧哈哈。 本书介绍计算机能做什么以及如何做到，计算机技术的局限性以及目前来说几乎难以达到的极限，计算机之间如何沟通，沟通时会发生什么，以及计算机和通信如何影响着我们身边的世界。假若你能对这种
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-02-15 23:51" pubdate>
+              2022-02-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%BB%E4%B9%A6/" class="category-chain-item">读书</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%BD%AC%E8%BD%BD/">#转载</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/02/15/%E8%BD%AC%E8%BD%BD-%E5%88%98%E7%91%9C%E3%80%8A%E6%84%BF%E4%BD%A0%E6%85%A2%E6%85%A2%E9%95%BF%E5%A4%A7%E3%80%8B/" target="_self">
+          转载-刘瑜《愿你慢慢长大》
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/02/15/%E8%BD%AC%E8%BD%BD-%E5%88%98%E7%91%9C%E3%80%8A%E6%84%BF%E4%BD%A0%E6%85%A2%E6%85%A2%E9%95%BF%E5%A4%A7%E3%80%8B/" target="_self">
+        <div>
+          大一的时候看了刘瑜的《观念的水位》，《送你一颗子弹》。当时不太懂，只是觉得书名很好，内容是一个有思想的大学女生写的。后来看到了一本教育的书《愿你慢慢长大》，这盘文章这两年时常想起来，尤其是这一句话–人的本质是无穷绽放，人的尊严体现在向着真善美无尽奔跑。今天将这篇文章记录在这里。 今年六一儿童节，正好是你满百天的日子。 当我写下“百天”这个字眼的时候，着实被它吓了一跳——一个人竟然可以这样小，小到以
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-02-15 23:51" pubdate>
+              2022-02-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%BB%E4%B9%A6/" class="category-chain-item">读书</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%BD%AC%E8%BD%BD/">#转载</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/02/15/%E8%AF%BB%E4%B9%A6-%E7%A9%BF%E8%B6%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E8%BF%B7%E9%9B%BE/" target="_self">
+          读书—穿越计算机的迷雾
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/02/15/%E8%AF%BB%E4%B9%A6-%E7%A9%BF%E8%B6%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E8%BF%B7%E9%9B%BE/" target="_self">
+        <div>
+          周一早上工作等待的时候读完了这本科普书。总体来说作者虽然是一个技术达人，但对于人文社科的东西信手拈来，也看到他对自己童年回忆的珍重、专业的热情、女儿的爱、很多东西的思考，大部分意义上也是我想做到的。 本书从基本的电子、电流、一直到电磁转换、通信继电器、放大器写到计算机加法器的实现。最后一部分其实草草了事，毕竟只是作为给高中生的科普书。 其实计算机根本不知道他在做什么，这只是一块超大规模的集成电路啊
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-02-15 23:51" pubdate>
+              2022-02-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%BB%E4%B9%A6/" class="category-chain-item">读书</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%BD%AC%E8%BD%BD/">#转载</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/02/01/%E8%AF%BB%E4%B9%A6-%E7%88%B1%E4%B8%8E%E8%B5%84%E6%9C%AC/" target="_self">
+          读书-爱与资本
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/02/01/%E8%AF%BB%E4%B9%A6-%E7%88%B1%E4%B8%8E%E8%B5%84%E6%9C%AC/" target="_self">
+        <div>
+          大年初一第一天读完了这本马克思的传记。看到了他与燕妮恋爱、求学、追求自己的事业、不断流亡、直到晚年成名的经历，也感受到了他与恩格斯之间纯粹且志同道合的友谊。 燕妮和她的女儿们可谓都是很理想主义的存在了，自小在家中就与诸多思想积极的知识分子相接处，最终也都与社会主义者相结合，但也是很痛苦吧。其他的社会主义者在自身理想的基础上都没那么纯粹，掺杂了太多自我的成飞。做马克思的家人也牺牲太多太多了，可以说他
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-02-01 23:51" pubdate>
+              2022-02-01
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%BB%E4%B9%A6/" class="category-chain-item">读书</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%BD%AC%E8%BD%BD/">#转载</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/01/30/%E8%AF%BB%E4%B9%A6-%E7%BC%96%E7%A0%81%EF%BC%9A%E9%9A%90%E5%8C%BF%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E7%A1%AC%E4%BB%B6%E8%83%8C%E5%90%8E%E7%9A%84%E8%AF%AD%E8%A8%80/" target="_self">
+          读书-编码：隐匿在计算机软硬件背后的语言
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/01/30/%E8%AF%BB%E4%B9%A6-%E7%BC%96%E7%A0%81%EF%BC%9A%E9%9A%90%E5%8C%BF%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E7%A1%AC%E4%BB%B6%E8%83%8C%E5%90%8E%E7%9A%84%E8%AF%AD%E8%A8%80/" target="_self">
+        <div>
+          这本书在计算机世界中很有名，去年国庆在成都的时候读完了这本书。 作者在序中写道：计算机是二十世纪技术领域的登峰造极之作，它是一种值得欣赏、具有美学文化底蕴的人类伟大成果，这种美不需要明喻和暗喻的额外修饰。慢慢的我也能体会到这种层次化的工程之美。 本书从莫尔斯码，条形码，盲文的编码出发，引出了二进制编码。在电报的信号放大问题中，引出了继电器这个基础的电路解构。通过继电器构建了各种逻辑门，与或非，异或
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-01-30 23:51" pubdate>
+              2022-01-30
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%BB%E4%B9%A6/" class="category-chain-item">读书</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%BD%AC%E8%BD%BD/">#转载</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/11/13/%E8%BD%AC%E8%BD%BD-%E8%8B%8F%E6%89%93%E7%BB%BF-%E6%8E%89%E4%BA%86/" target="_self">
+          转载-苏打绿-掉了
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2021/11/13/%E8%BD%AC%E8%BD%BD-%E8%8B%8F%E6%89%93%E7%BB%BF-%E6%8E%89%E4%BA%86/" target="_self">
+        <div>
+          心疼的玫瑰 半夜还开著找不到匆匆掉落的花蕊 回到现场却已来不及等待任何回音都不可得 微弱的风筝 冬天里飘著回不去手中缠线的那个没有蓝天 又何必去飞 怎么适合 黑色笑靥掉了 雪白眼泪掉了该出现的所有表情瞬间掉了 瞳孔没有颜色 结了冰的长河回忆是最可怕的敌人 故事情节掉了 主角对白掉了该属于剧中的对角戏也掉了 胸口没有快乐 断了翅的白鸽不枯萎的借口全掉了 曾经唱过的歌 分享过的笑声在心中不断拉扯 想念
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-11-13 23:51" pubdate>
+              2021-11-13
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%BB%E4%B9%A6/" class="category-chain-item">读书</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%BD%AC%E8%BD%BD/">#转载</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/07/%E8%BD%AC%E8%BD%BD-%E5%90%89%E5%8D%9C%E6%9E%97--%E5%A6%82%E6%9E%9C/" target="_self">
+          转载-吉卜林--如果
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2021/10/07/%E8%BD%AC%E8%BD%BD-%E5%90%89%E5%8D%9C%E6%9E%97--%E5%A6%82%E6%9E%9C/" target="_self">
+        <div>
+          描述一个人自我坚定成长该有的样子。 如果 如果在众人六神无主之时,你镇定自若而不是人云亦云; 如果被众人猜忌怀疑时,你能自信如常而不去枉加辩论; 如果你有梦想,又能不迷失自我; 如果你有神思,又不至于走火入魔; 如果在成功之中能不忘形于色,而在灾难之后也勇于咀嚼苦果; 如果看到自己追求的美好破灭为一摊零碎的瓦砾,也不说放弃; 如果你辛苦劳作,已是功成名就,为了新目标,你依旧冒险一搏,哪怕功名成乌有
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-07 23:51" pubdate>
+              2021-10-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%BB%E4%B9%A6/" class="category-chain-item">读书</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%BD%AC%E8%BD%BD/">#转载</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/07/%E8%BD%AC%E8%BD%BD-%E5%8D%93%E5%88%AB%E6%9E%97-As%20I%20Began%20to%20Love%20Myself%20%E5%BD%93%E6%88%91%E7%9C%9F%E6%AD%A3%E5%BC%80%E5%A7%8B%E7%88%B1%E8%87%AA%E5%B7%B1/" target="_self">
+          转载-卓别林-As I Began to Love Myself 当我真正开始爱自己
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2021/10/07/%E8%BD%AC%E8%BD%BD-%E5%8D%93%E5%88%AB%E6%9E%97-As%20I%20Began%20to%20Love%20Myself%20%E5%BD%93%E6%88%91%E7%9C%9F%E6%AD%A3%E5%BC%80%E5%A7%8B%E7%88%B1%E8%87%AA%E5%B7%B1/" target="_self">
+        <div>
+          据说是卓别林晚年所做的诗，豁达通透。许久之前看到很感动，很有智慧。 As I Began to Love Myself当我真正开始爱自己 As I began to love myselfI found that anguish and emotional suffering are only warning signs that I was living against my own truth
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-07 23:51" pubdate>
+              2021-10-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%BB%E4%B9%A6/" class="category-chain-item">读书</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%BD%AC%E8%BD%BD/">#转载</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="page-number" href="/page/3/#board">3</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

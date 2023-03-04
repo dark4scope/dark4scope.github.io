@@ -1,0 +1,813 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="darkscope">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="作者是我喜欢的那种大科学家，对技术发展有深刻、全面而系统的认识，对技术的影响，信息安全，伦理都有深刻的认识。这本书给我一个宏大和全面的视角看待计算机和通信领域的技术基础和社会影响。我和作者之间的差距是十万八千里吧哈哈。 本书介绍计算机能做什么以及如何做到，计算机技术的局限性以及目前来说几乎难以达到的极限，计算机之间如何沟通，沟通时会发生什么，以及计算机和通信如何影响着我们身边的世界。假若你能对这种">
+<meta property="og:type" content="article">
+<meta property="og:title" content="读书-普林斯顿计算机公开课">
+<meta property="og:url" content="http://example.com/2022/02/15/%E8%AF%BB%E4%B9%A6-%E6%99%AE%E6%9E%97%E6%96%AF%E9%A1%BF%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%85%AC%E5%BC%80%E8%AF%BE/index.html">
+<meta property="og:site_name" content="日拱一卒">
+<meta property="og:description" content="作者是我喜欢的那种大科学家，对技术发展有深刻、全面而系统的认识，对技术的影响，信息安全，伦理都有深刻的认识。这本书给我一个宏大和全面的视角看待计算机和通信领域的技术基础和社会影响。我和作者之间的差距是十万八千里吧哈哈。 本书介绍计算机能做什么以及如何做到，计算机技术的局限性以及目前来说几乎难以达到的极限，计算机之间如何沟通，沟通时会发生什么，以及计算机和通信如何影响着我们身边的世界。假若你能对这种">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-02-15T15:51:00.000Z">
+<meta property="article:modified_time" content="2023-03-04T16:30:22.811Z">
+<meta property="article:author" content="darkscope">
+<meta property="article:tag" content="转载">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>读书-普林斯顿计算机公开课 - 日拱一卒</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-top"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-books"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="读书-普林斯顿计算机公开课"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-02-15 23:51" pubdate>
+          2022年2月15日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          18k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          154 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">读书-普林斯顿计算机公开课</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>作者是我喜欢的那种大科学家，对技术发展有深刻、全面而系统的认识，对技术的影响，信息安全，伦理都有深刻的认识。这本书给我一个宏大和全面的视角看待计算机和通信领域的技术基础和社会影响。我和作者之间的差距是十万八千里吧哈哈。</p>
+<p>本书介绍计算机能做什么以及如何做到，计算机技术的局限性以及目前来说几乎难以达到的极限，计算机之间如何沟通，沟通时会发生什么，以及计算机和通信如何影响着我们身边的世界。假若你能对这种令人惊叹的技术产生些许欣赏，并且真正理解它的运行方式、起源以及未来发展趋势，我写作本书的目的就达到了。在这个过程中，若你能找到一个有益的视角来了解这个世界，则吾愿已成。</p>
+<p>后来越发认识到，任何专业和实践活动都是我们认识世界的窗口，物理、数学、生物、计算机、还有种种人文社科的专业都是相通的。起源于求真，在人们不断去求索，探究事物本质的时候，就发展出了不一样的视角认识世界。</p>
+<p>技术的改变不是孤立事件而是一个持续发展的过程——快速、持续且不断加速的过程。生活被技术的影响速度远远超过我们的想象。</p>
+<p>本书的第一部分:<br>介绍计算机硬件的实现，从差分机、图灵机、到CPU的基本结构。</p>
+<p>“假如向机器下达的指令可以简化成数字编码，假如机器可以在某种程度上分辨数字和指令，那么记忆元件便可用于存储数字和指令。”——Arthur W.Burks，Herman H.Goldstine，John von Neumann合著的《电子计算仪器逻辑设计的初步讨论》，1946年</p>
+<p>区分指令和数据确实是很重要的一步，这从程序的结构和汇编语言的设计可以看到。</p>
+<p>任何可以分解为位的东西都可以通过数字计算机表示并处理。值得记住的是，很多很多东西我们并不知道该如何将它们以位的形式进行编码，也不知道计算机会如何进行处理。这些往往是生活中最重要的那些东西，创造力、真理、美、爱、荣誉、恐惧和价值。我怀疑，在很长的时间内这些恐怕都处于计算机的掌握之外。</p>
+<p>我想，虚拟现实要真正实现，那么人们的五感都应该被模拟到，包括嗅觉、触觉等。但是精神价值和情感根本难以被计算机理解。我的研究生方向是自然语言处理，其实里面的很多课题和任务都大概是在拟合数据集，包括情感分析、问答等。但是这也体现出工程化的思路，对给定的认可一个问题，我们都可通过分层次、模块化的设计，优化我们想要的目标。整个系统的性能取决于方方面面，数据、模型、优化算法等。做工程的研究和理科科研的研究有很大不同，有用就行也没什么大毛病。</p>
+<p>本书第二部分介绍软件相关的知识<br>任何一种编程语言有它特定的应用场景，没有一种方法适合于任何问题。</p>
+<p>现在的编程语言多达几千种甚至上万种，但真正广泛使用的恐怕连100种都到不了。为什么会有这么多种？前面也提到过，每种语言都代表了对效率、表达能力、安全性和复杂性的取舍。许多语言显然是为了弥补之前语言的不足才发明的，它们不仅吸取了之前语言的教训，还能利用更多的计算资源，通常也会受到设计者个人喜好的强烈影响。新的应用领域也会催生专门面向该领域的新语言。</p>
+<p>我们心里要牢记的是：现代技术体系是不断地使用一些通用的硬件，（例如处理器、内存和连接环境），然后用软件来创建一些特别的行为。传统观念认为软件更便宜、更灵活，而且相比硬件而言更容易改变，尤其是在设备离开工厂之后。例如，如果应用计算机来控制汽车的动力和刹车，显然像防抱死刹车和电动稳定控制这样的不同功能就是软件的特色了。</p>
+<p>大众公司CEO辞职，1100万辆汽车被召回，销售额明显下降，大众品牌的声誉和股票的价格遭受重创。2016年6月，大众公司同意向美国支付150亿罚金，但是这个故事可能还没有结束。大众汽车的所有者不得不给软件升级，有些汽车还需要更换硬件。大众公司可能还必须回购受影响的汽车。现实情况是，大众汽车的许多拥有者很有可能嫌麻烦而不愿意去升级软件，他们宁愿为自己获取更好的性能，而不愿意为所有人去降低污染。</p>
+<p>在最近更多的例子中，人们相信2015年12月发生在乌克兰的大规模断电就是俄罗斯的恶意软件所导致的，尽管俄罗斯政府否认涉及此事。</p>
+<p>◆ 4.4 难题与复杂性</p>
+<p>但有一个还是非常值得了解一下的，因为它在现实当中很常见，而且从复杂性上说特别糟糕，但是很重要。这就是指数级复杂性，按照2N增长（与N2可不一样！）。指数级算法的工作量增长极快：增加一个数据项，工作量就会翻一番。从某种意义上讲，指数级算法与logN算法是两个极端，后者数据项翻一番，工作量才增加一步。</p>
+<p>实际上，这个区别可以表达得更加精确一些。所谓“容易”的问题，都具有“多项式”级复杂性。换言之，解决这些问题的时间可以用N2这样的多项式来表示，其中指数可以大于2，但都是可能被解决的。（如果忘了什么是多项式也不用担心，多项式在这里就是指一个变量的整数次幂，比如N2或N3。）计算机科学家称这类问题为“P”（即“Polynomial”，多项式），因为它们可在多项式时间内解决。</p>
+<p>现实中大量的问题或者说很多实际的问题似乎都需要指数级算法来解决，也就是说，我们还不知道对这类问题有没有多项式算法。这类问题被称为“NP”问题。NP问题的特点是，我们不能快速求解，但可以快速验证某个解法提议是否正确。NP的意思是“非确定性多项式”，这个术语非正式的含义是：这些问题在多项式时间内可以用某个算法来求解，但这个算法每当面临选择时总归能猜中。在现实生活中，没有什么能幸运到始终都做出正确的选择，所以这只是理论上的一种理想状态而已。</p>
+<p>1970年，斯蒂芬·库克证明了一个非同小可的数学结论，表明所有这些问题其实都是等价的，只要能够找到一个多项式时间算法（复杂性类似N2）解出其中一个问题，据此就能找到所有问题的多项式时间算法。库克因此获得了1982年的图灵奖。</p>
+<p>◆ 4.5 小结</p>
+<p>密码学高度依赖于算法，它是一门发送秘密消息仅给预期的接收者阅读的艺术。我们将在第12章讨论密码学，因为它与通过计算机安全地交换私密信息紧密相关。</p>
+<p>◆ 第5章 编程与编程语言</p>
+<p>“这让我满怀力量地认识到：我的余生最美好的部分将用于在我自己的程序中寻找错误。”——Maurice Wilkes，第一台存储程序的数字计算机EDSAC的开发者，《一位计算机先驱者的回忆录》</p>
+<p>同样，管理一台计算机的资源也十分困难，而现代计算机的复杂性更是让这种困难有增无减。因此，我们也需要让计算机来控制自己的操作，由此就有了所谓的操作系统。编程和编程语言是本章的主题，而软件系统，特别是操作系统将会在下一章讨论。</p>
+<p>◆ 5.2 高级语言</p>
+<p>那就是独立于任何CPU体系结构的“高级”编程语言问世了。高级编程语言让人类得以用接近自然语言的方式来表达计算过程。</p>
+<p>用高级语言编写的代码经过一个翻译程序，可被翻译为目标处理器的汇编语言指令。这些汇编语言指令则会进一步被转换为比特，从而能够加载到存储器中并执行。</p>
+<p>在计算机价格昂贵、速度又慢而且资源有限的时代，人们都担心用高级语言写出来的程序效率太低，因为一个熟练的汇编程序员写的代码让编译器生成的汇编代码望尘莫及。编译器作者付出了很大努力，希望生成的代码能够达到手写代码一样的高质量，而这为高级语言的流行奠定了基础。今天，计算机速度提升了上百万倍，而且有了足够的内存。尽管编译器和编译器作者仍然很关心指令级的效率问题，但程序员已经很少需要操心了。</p>
+<p>这也引出了程序和编程方面一个非常重要的共识：针对某个特定的任务，总会有多种写程序的方式。从这个意义上说，编程就像是文学创作。正如写作一样，风格以及恰如其分地运用语言对写程序至关重要，而且还是区分真正伟大的程序员与普通程序员的标志。正因为同样的计算任务可以有如此丰富的表达方式，整段代码中片段的复制和剽窃显而易见。我每次上编程课的时候都会着重强调这个观点，但仍然不时有学生认为更改名字或者改变代码顺序，就可以掩盖剽窃的事实。很抱歉，这是行不通的。</p>
+<p>现在的编程语言多达几千种甚至上万种，但真正广泛使用的恐怕连100种都到不了。为什么会有这么多种？前面也提到过，每种语言都代表了对效率、表达能力、安全性和复杂性的取舍。许多语言显然是为了弥补之前语言的不足才发明的，它们不仅吸取了之前语言的教训，还能利用更多的计算资源，通常也会受到设计者个人喜好的强烈影响。新的应用领域也会催生专门面向该领域的新语言。</p>
+<p>◆ 5.3 软件开发</p>
+<p>现实中的编程往往是大规模的。大规模编程的策略与任何人想写一本书或承担任何大项目时一样：先搞清楚要做什么，然后从大概的规范着手，将其逐级分解为较小的任务，再分别完成这些小任务，同时保证它们能够组合在一起。在编程中，每个小任务意味着一个人用某种编程语言可以写出来的精确的计算步骤。</p>
+<p>编译器或Web浏览器可能有几十万到一百万行代码。大型系统则可能有几百万甚至上千万行代码，由数百或数千人共同开发，开发时间也长达几年乃至几十年。在披露他们这些项目的规模时，公司往往都比较谨慎，但可靠的信息仍然不时浮出水面。比如，根据2015年的一次谷歌会议讲话，Google总共大约由二十亿条代码构成。这种规模的软件需要程序员、测试人员、文档编写人员协同工作，还要有计划、期限、多层次的管理，历经无穷无尽的会议一步步走下去。据我的一位同事说，他曾参与过一个重要系统的开发，针对该系统的每一行代码都要开一次会。那个系统有几百万行代码，也许他说得言过其实，但老资格的程序员可能还是会说：“这并不过分。”</p>
+<p>函数库提供的服务是通过API（Application Programming Interface，应用编程接口）的形式描述给程序员的。API会罗列出所有的函数，说明每个函数的用途、用法、需要的输入数据，以及生成什么值。API也会描述数据结构，即传进传出的数据的组织形式，以及为请求服务必须遵守哪些约束条件和计算将返回什么结果。这种规范必须面面俱到、严谨准确，因为借此编写的程序最终会由一台不会说话的计算机而不是一个随和友善的人去解读。</p>
+<p>然而，用“bug”指代错误并不是霍普的发明，这个用法可以上溯到1889年。以下是摘自《牛津英语词典》（第2版）的解释：bug.机器、图纸等中的缺陷或错误。起源：美国。1889年《蓓尔美街报》，3月11日，1&#x2F;1我听说啊，爱迪生先生连续两个晚上都在找他留声机里的“bug”——其实就是在排除故障，但听起来好像所有问题都是因为有个虫子钻进去引起的。导致bug的原因多种多样，甚至可以写出一本书来专门论述（确实有这类书）。其中比较常见的原因包括忘记处理可能发生的情况、在测试某个条件时写错了逻辑或算术表达式、用错了公式、访问了没有分配给程序的存储器、误操作某种数据、未验证用户输入，等等。</p>
+<p>正是由于bug广泛存在，所以各种重要的软件才会频繁升级，比如浏览器，它已经成为很多网络黑客关注的焦点。就拿我使用的Firefox来说吧，在2015年前后发现了超过100个安全缺陷。这不是特例，也并不意味着Firefox程序员的失职，相反说明了编写一个耐用的程序非常难，而坏人始终都在寻找你的弱点。现实中软件面临的另一个复杂性在于外界环境瞬息万变，因此程序必须不断适应新情况。新的硬件问世后，它所需要的软件可能得进行系统级的改动。新的法律法规出台，程序的规范可能就必须调整——众所周知，税法每次有什么变化，相关软件都要升一次级。过时的计算机、工具和语言会被新生替代品取代，数据格式过时的情况更加常见——今天的Word软件打不开20世纪90年代初写就的Word文档。自然，存储和处理这些数据的物理设备也一样在代代更替。而随着人的退休、死亡或被公司解雇，专业知识也会消逝。学生在校期间开发的系统随着设计人员的毕业也将面临相同的遭遇。</p>
+<p>◆ 5.4 知识产权</p>
+<p>版权保护着创造性的表达。在文学、艺术、音乐和影视领域，版权是深入人心的。版权保护着创意产品不被他人抄袭——至少在理论上，保护作者在一段时期内通过自己的产品获得收益的权利。过去，版权的保护期相当短，在美国这个时间原来只有28年，而今天在美国这个时间是作者生前加去世后70年，在其他很多国家则是作者生前加去世后50年。2003年，美国最高法院裁定作者去世后70年是一个“有限的”概念。从法律角度严格来讲，这么说没错，而实际上呢，跟“永久”没有太大区别。美国的版权持有者正在努力让全世界的版权条款都向美国的靠近。</p>
+<p>反对这种专利的一种论调认为，算法纯粹是数学知识，法律有明文规定说不能取得专利（即依法不能取得）。作为一个还算有数学背景的程序员，我觉得这种说法似乎不妥——尽管算法要用到数学，但算法并不是数学。</p>
+<p>我有什么合法权益？因为API并不是原创的概念，我无法对其申请专利；由于我必须向公众展示API才能为人所用，所以这不是商业机密。如果将API定义为创造性活动，我应该能够通过版权保护它，其他人只有在获得我许可的前提下才能使用它；这和我提供SDK的情况是类似的。这样的保护足够吗？这个法律问题，还有很多类似的问题，都暂时无法得到确切的答复。API的版权地位不是一个假设的问题。2010年1月，Oracle公司买下了SunMicrosystems公司，Java编程语言的创造者。然后在2010年8月，Oracle起诉谷歌，声称谷歌在运行Java的安卓手机中非法使用Java API。</p>
+<p>为了过于化简复杂案件的结果，区域法院认为API是不具有版权的。Oracle上诉之后结果被反转。谷歌向美国高级法院申诉以审理这个案例，然而2015年6月法院拒绝了这个请求。下一回合中，Oracle要求超过90亿美元的损失费，但是2016年5月的一个判决认为谷歌对API的使用是“公正的运用”，也就是说这并没有构成侵权行为。我想，在这个特殊的案例中，大多数程序员都会比较赞同谷歌的立场，但是这件事仍未尘埃落定。（在最初的案件中，电子前线基金会为了支持谷歌发布过非当事人意见陈述，我是签署该陈述的一员。）</p>
+<p>◆ 5.5 标准</p>
+<p>有时候甚至还有相互竞争的标准，让人觉得有点浪费。（正如计算机科学家安迪·特南鲍姆（Andy Tanenbaum）所说：“多个标准的好处在于让人有多个选择。”）过去的例子有录像带的Betamax和VHS标准，以及高清视频盘的HD-DVD和Blu-ray Disc标准。对于这两种情况，前者以一种标准最终胜出告终，后者则很可能两种标准共存，就像美国存在两种不兼容的手机技术一样。软件也有很多标准，包括ASCII和Unicode字符集标准，C和C++编程语言，各种加密和压缩算法，以及网络上的各种信息交换协议。标准对于互操作能力和开放的竞争环境至关重要。有了标准，独立创造的东西才能在一起协作，多个供应商才能同台竞技，而专有系统则会把每个人限制死。专有系统的所有者自然愿意把人们都限制住。标准也有缺点——如果标准本身质量不高或者已经过时，但所有人又都被迫使用它，那它就会阻碍进步。不过，与它的优点相比，这些缺点还是能够让人接受的。</p>
+<p>◆ 5.7 小结</p>
+<p>软件的知识产权在受到挑战，尤其在专利方面，那些通过带有攻击性的言辞来引起无意义的争论构成了强大的负面力量。版权问题看上去简单些，但即使在这里，主要的法律问题如API的地位始终悬而未决。在这些事例中，法律没有对新科技做出足够快的回应（可能也无法回应）。当终于有回应时，国与国之间又有所不同。</p>
+<p>◆ 第6章 软件系统</p>
+<p>“程序员就像诗人，他们的工作和纯粹的思考方式只有细微的差别。他们运用想象从无到有地创建空中楼阁。创造的媒介很少如此灵活，如此容易打磨和修改，所以它具有足够的能力以实现伟大的概念结构。”——Frederick P.Brooks，《人月神话》，1975年</p>
+<p>◆ 6.1 操作系统</p>
+<p>操作系统最初就是为了代替人工操作员完成上述工作才诞生的。</p>
+<p>◆ 6.2 操作系统的工作原理</p>
+<p>CPU的结构是经过特殊设计的，这样在计算机通电后，CPU会开始执行存放在非易失性存储器中的一些指令。这些指令继而从一小块闪存中读出足以运行某些设备的代码。这些代码在运行过程中再从磁盘、USB存储器或网络连接的既定位置读出更多指令。这些指令再继续读取更多指令，直到加载了足够完成有效工作的指令为止。这个准备开始的过程叫做启动（booting）。这个词最初用“bootstrapping”表示，源自拉着靴带（bootstrap）给自己穿上靴子的典故，现在用“booting”就可以了。具体细节可能不同，但基本思想是一样的，即通过少量指令足以找到更多指令，后者依次再找到更多的指令。</p>
+<p>操作系统会响应各种事件，比如音乐结束、邮件或网页到达，或者用户按下了键盘上的按键。对这些事件，操作系统都会做出必要的处理，通常是把发生的事件转发给处理相关内容的应用程序。如果我要重新排列屏幕上的窗口，操作系统会告诉显示器把窗口放在什么地方，并告诉每个应用程序各自窗口的哪一部分可见，以便重新绘制窗口。如果我选择“文件&#x2F;退出”或单击窗口右上角的“×”按钮退出应用程序，系统会通知应用程序它马上要“死”了，以便它有机会妥善处理事务，比如，弹出对话框询问用户“您想保存这个文件吗？”。然后，操作系统会回收该程序占用的所有资源，并告诉那些窗口将要露出来的其他程序必须重新打开各自的窗口了。</p>
+<p>操作系统为应用程序提供并定义了一组操作或服务，比如将数据存储至文件或者从文件中提取数据、建立网络连接、获取键盘输入、报告鼠标移动和按钮单击、绘制屏幕，等等。操作系统以标准化的或者协商一致的方式提供这些服务，而应用程序通过执行一种特殊的指令来请求这些服务，该指令将控制权传递到操作系统中某个特定的位置。操作系统完成请求内容，然后再将控制权和结果返回给应用程序。操作系统的这些“入口”被称为系统调用，而对这些系统调用的详细说明实际上恰恰解释了操作系统能做什么。现代操作系统通常有几百个系统调用。</p>
+<p>根据设备驱动程序接口的某个部分确认它是一个磁盘，然后加载USB磁盘驱动程序与这个磁盘通信。一般来说，没有必要寻找新的驱动程序，因为所有设备的接口都是标准化的，操作系统本身已经包含了必要的代码，而驱动设备的特殊程序也已经包含在设备自身的处理器中。</p>
+<p>◆ 6.4 文件系统</p>
+<p>文件系统是操作系统的一个组成部分，它能够让硬盘、CD和DVD、移动存储设备，以及其他各种设备，变成看起来像是由文件和文件夹组成的层次结构。计算机有逻辑组织和物理实现两大概念，文件系统就是这两大概念之间差异的体现。文件系统能够在各种不同的设备上组织和存储信息，操作系统则为所有这些设备都提供相同的接口。文件系统存储信息的方式以及存储多久，最终甚至会衍生出一些法律问题。因此说，研究文件系统的另一个目的，就是要理解为什么“删除文件”并不代表其内容会永远消失。</p>
+<p>闪存（SSD）设备的驱动程序不同，且设备自身通过复杂的代码来记录设备中信息的具体存储位置。这是因为闪存设备会受限于每一部分的使用次数。设备中的软件追踪每一个物理块的使用次数，并通过移动数据来保证每块的使用频率基本相同，这个过程叫做磨损均匀。</p>
+<p>◆ 6.5 应用程序</p>
+<p>首先，浏览器必须处理异步事件。所谓异步事件，就是在非预定时间发生、没有特定次序的事件。举个例子，你点击一个链接，浏览器就会发送一个对相应页面的请求。当浏览器发送完请求后，它在等待的同时需要准备响应你的其他操作，比如滚动当前页面，或者在你点击“后退”按钮或另外一个链接时中断之前的请求，即使浏览器正在加载请求的页面。在这段时间，它可能需要不断地更新显示内容以应对用户调整窗口大小的操作，这个过程有时是不断持续和反复的，因为在等待数据加载时你可能将窗口大小来来回回地调整。如果页面中包含音频和视频，浏览器也需要对其进行管理。编写异步系统一直是非常困难的，而浏览器就涉及很多异步操作。</p>
+<p>浏览器必须支持很多种内容，包括，静态文本和可以改变网页内容的互动程序。对于部分内容的支持可以委托给辅助程序，这是处理PDF文档和电影的标准做法，但浏览器本身必须提供相应的机制，以便启动这些辅助程序，为它们发送和接收数据以及请求，并将它们整合到显示界面中。浏览器必须管理多个标签页或窗口，每个标签页和窗口都可能需要执行前述操作。它不仅要为每个标签页和窗口单独保留一份历史记录，还要保存书签、收藏夹等数据。它要支持访问本地文件系统，以便上传和下载文件。浏览器自身还是一个平台，要提供不同层次的扩展接口。比如，要支持Flash插件、JavaScript和Java虚拟机，以及AdblockPlus和Ghostery之类的扩展程序。从本质上说，它要在包括手机在内的多种不同操作系统的多个不同版本上工作。</p>
+<p>◆ 6.6 软件的层次</p>
+<p>浏览器不属于操作系统，因为你可以运行任意浏览器，甚至同时运行多个浏览器，都不会干扰对资源的共享或是控制。听起来在技术上好像有明显的界限，但要是较起真来，比如打起官司来，那可就难说了。美国司法部从1998年开始（到2011年结束）对微软的反垄断诉讼，就涉及微软的Internet Explorer浏览器到底是操作系统的一部分，还是一个独立应用程序的问题。如果按照微软的主张，浏览器是操作系统的一部分，那么要求微软从系统中删除IE就是不合理的，而微软要求用户使用IE的做法就是正当的。如果浏览器是一个独立的应用程序，那么微软就涉嫌以非法手段强迫用户在非必要情况下使用IE。当然，这个官司本身要复杂得多，但如何界定浏览器的归属问题确实非常重要。最终诉讼的结果是，法院认定浏览器是一个独立的应用程序，不属于操作系统。用法官托马斯·杰克逊（Thomas Jackson）的话说：“Web浏览器和操作系统是相互独立的产品。”</p>
+<p>◆ 7.1 编程语言的概念</p>
+<p>JavaScript这门语言实际上包含三个方面。第一是语言本身，包括让计算机完成算术计算的语句、测试条件，以及重复计算的规则等。第二是JavaScript代码库，也就是由别人写好的程序段，你可以在自己的程序里直接使用这些预制程序段，而不必再花时间重写。典型的例子包括数学函数、计算日历的函数，以及搜索和操作文本的函数等。第三是访问浏览器和网页的接口，这些接口含有JavaScript，JavaScript程序通过这些接口可以在其所在的网页中获得用户输入、响应用户动作（如单击按钮或填写表单）、让浏览器显示不同的内容或者切换到其他网页。</p>
+<p>◆ 软件总结</p>
+<p>算法。算法就是一系列精确、无歧义的步骤，可以在执行完某些任务后停止。算法描述了不依赖于任何实现详情的计算过程。这些步骤由定义明确的基本操作或原始操作构成。算法有很多，我们只介绍了基本的搜索和排序算法。</p>
+<p>库。编写一个在真正的计算机上运行的程序要牵扯很多细节，涉及很多常用操作。库以及类似的机制可以提供预制的组件，供程序员在编程时使用。有了库，程序员就可以在既有工作成果基础上开展新工作。今天的编程工作通常都是组织既有组件与编写原创代码并重。组件可能是库函数，如在JavaScript程序中用到的那些，也可能是像谷歌地图，或者是其他Web服务一样的大型系统。然而，从本质而言，它们都是由程序员使用我们介绍过的语言或者没介绍过的类似语言指令编写的。接口。接口或者API（应用程序编程接口）是提供服务的软件与使用该服务的软件之间的一种约定。库和组件通过API提供服务。操作系统通过自身的系统调用接口让硬件看起来更规则，而且可以编程控制。</p>
+<p>本书的第三部分介绍通信和加密<br>几千年以来，长距离跑者都携带着信息。公元前490年，费迪皮迪兹从马拉松战场奔跑了42公里到达雅典，把打败波斯人的胜利消息传递给了雅典人。不幸的是，根据传说记载，跑到雅典之后，他上气不接下气地说完“庆祝吧，我们胜利了”之后就去世了。</p>
+<p>电报系统也让当时的人们经历了从希望到渴望再到失望的过程，就如同后来因特网早期繁荣和20世纪90年代后期信息泡沫破裂一样。财富得而复失，欺诈随处可见。乐观主义者预言世界和平和相互谅解的日子为期不远，而现实主义者则认识到尽管情节不同，但历史将再次重演。“这一次不一样”的说法几乎就没有兑现过。</p>
+<p>◆ 第8章 网络</p>
+<p>等待或延迟衡量的是特定信息块通过系统所需要的时间，高延迟不一定意味着低带宽：用卡车满载硬盘穿越整个国家，带宽显然是巨大的，但延迟也极高。</p>
+<p>◆ 8.2 电缆与DSL</p>
+<p>电话线传输信号56Kbps的速度限制是其最初设计导致的。为此很多人选择了另外两种上网方式，其带宽是电话线的100倍。首先是使用千家万户都安装的有线电视电缆。这种电缆可以同时传输数百个频道的信号，因此其富余的带宽容量足以用于家庭之间来回传送数据。有线电视网的传输速度范围较广，通常为10Mbps或20Mbps。来回转换有线信号与位数据的设备叫有线调制解调器。这个名字显然是因为它与电话调制解调器功能相近，然而速度更快。</p>
+<p>另一种对家庭来说高速合理的联网技术也是基于家中好用但老旧的电话系统。这种技术叫做DSL（Digital Subscriber Loop，数字用户环路），有时候也叫ADSL，强调“asymmetric”即“非对称”，因为进入家中的带宽比从家到电话公司的带宽高。DSL提供的服务与有线电缆上网基本相同，但相比还是有几个主要的区别。</p>
+<p>◆ 8.3 局域网与以太网</p>
+<p>以太网的传输距离也是有限制的，通常在几百米左右。</p>
+<p>◆ 8.4 无线</p>
+<p>无线系统利用电磁波传送信号。电磁波是特定频率的电波，其振动频率以Hz来衡量（读者可能更熟悉广播电台常用的MHz或GHz，比如广播电台的频率是103.9 MHz）。在发送信号之前，首先要通过调制过程把数据信号附加到载波上。比如，调幅（AM）就是通过改变载波的振幅或强度来传达信息，而调频（FM）的原理则是围绕一个中心值来改变载波的频率。接收器接收到信号的强度与发射器的功率成正比，与到发射器距离的平方成反比。由于存在这种二次方递减的关系，距离发射器的距离增加一倍，接收器接收到的信号强度就只有原来的四分之一。无线电波穿越各种物质时强度都会衰减，只是物质不同衰减程度也有多有少。高频比低频更容易被吸收，二者在其他方面都一样。</p>
+<p>◆ 8.5 手机</p>
+<p>第一代蜂窝电话是由AT&amp;T在20世纪80年代早期研制成功的。当时的电话机又大又笨重，而蜂窝电话的广告中则有一个人手提一个装着电池的小箱子，站在一辆携带着天线的汽车旁边。为什么叫做“蜂窝”？因为频段和无线电的覆盖范围都是有限的，因此就要把整个地区划分为蜂窝状的许多单位。可以将每个这样的单位想象为六边形（见图8-2），然后其中有一个基站，基站与电话系统的余下部分相连。打电话的时候，手机会与最近的基站通信。当用户移动到另一个单位时，进行中的通话就由原来的基站移交给新基站，但这个切换用户一般觉察不到。</p>
+<p>手机使用的频段很窄，传输信息的能力有限。因为要使用电池，所以打电话时发射的都是低功率无线电波。而且根据法律规定，为了避免与其他无线设备发生干扰，它们的传输功率也会受到限制。电池容量越大，待机时间越长，但手机也会变得更大更沉。这也是在性能和能耗方面的一个权衡。</p>
+<p>手机在世界的不同地区会使用不同的频带，但一般都大约为900MHz和1900MHz。每个频带被分成多个信道，每次通话时，收发信号各占用一个信道。发送呼叫信号的信道由蜂窝单位中所有的手机共享，在某些系统中这个信道也可以同时用于发送短信和数据。</p>
+<p>每台手机都有一个唯一的15位识别码，这个识别码叫做国际移动设备标志（International Mobile Equipment Identity），缩写为IMEI，这相当于以太网的地址。启动手机后，它就会广播自己的识别码。距离最近的基站接收到手机信号后，会通过后台系统验证该识别码。随着手机移动，基站实时更新其位置信息，并不断向后台系统报告。如果有人呼叫该手机，后台系统就能知道这台手机一直与哪个基站保持联系。</p>
+<p>手机通常与信号最强的基站通信。手机会持续地调整功率，在距离基站较近时降低功率。这样不仅可以省电，也可以减少与其他手机的干扰。仅仅与基站保持联系所用的能量比通话低得多，这也是为什么待机时间以天为单位，而通话时间以小时为单位。然而，如果手机所在蜂窝单位信号较弱或根本没有信号，那么它就会因为拼命查找基站而大量耗电。</p>
+<p>GSM和CDMA都会利用数据压缩来尽可能减少封装信号的大小。针对通过嘈杂的无线电信道发送数据时会由于干扰产生无法避免的错误，再添加错误校验来解决问题。我们很快还会谈到这个。</p>
+<p>◆ 8.6 带宽</p>
+<p>由于在如此复杂的环境中进行操作，手机往往很难达到其有效带宽。4G，即“第四代”系统，为手机提供的带宽处于静止状态时应该是1Gbps，运动状态则是100Mbps</p>
+<p>◆ 第9章 因特网</p>
+<p>因特网必须满足以下这些不是那么显而易见的规则：因特网的所有接入方都要达成同样的协议和标准，如信息按什么格式组织、在计算机之间怎样交换，如何识别计算机身份并授权，以及发生了错误该如何处理。考虑到既得利益者的影响，网络协议和标准的达成可能会相当复杂：制造设备、出售服务的公司，专利和技术持有者；同时政府则想要监视和控制国际和国内的网络信息。</p>
+<p>◆ 9.2 域名与地址</p>
+<p>IPv4地址只有223个，大约43亿个，甚至还不够地球上每人分一</p>
+<p>◆ 9.3 路由</p>
+<p>ISP之间通过网关相互连接。由于主要运营商之间的网络容量巨大，所以各个公司的网络都汇接到因特网交汇点，运营商网络之间则互相建立物理连接。这样，就能使来自一个网络的数据高效传送到另一个网络。较大的交汇点每秒从一个网络向另一个网络传输几千兆位的数据，随便举一个例子，伦敦网络交换处（London InternetExchange，LINX），每秒处理量超过3Tbps。</p>
+<p>你可以用Unix系统（包括Mac）上的traceroute程序或Windows上的tracert探测路由信息，这个程序也有网页版的。图9-2显示了从普林斯顿到澳大利亚悉尼大学的网络路径。每行展示了域名、IP地址，以及到达路径中下一个跳转花费的往返时间。</p>
+<p>◆ 9.4 TCP&#x2F;IP</p>
+<p>尽力而为，也会丢包，丢了就是丢了，无法找回。因特网协议提供的数据包传递服务是不可靠、无连接的。所谓“无连接”，就是说每个IP数据包都是独立的，和其他IP数据包无关。因特网协议没有状态或存储功能，这个协议一旦把数据包传给下一个网关，就不再需要存储关于这个数据包的任何信息。“不可靠”基本上是字面含义。因特网协议是个“尽力而为”型协议，并不能保证数据包传送的质量，出错也就出错了。数据包可能丢失或者损坏，接收到的顺序可能和发送的不一致，也许送达得太快而无法处理，也许送达得太慢而失去作用。当然，实际使用的时候，因特网协议是相当可靠的，但是当数据包中途丢失或损坏的时候，该协议确实不会尝试修复。这就像是在陌生的地方把明信片丢进邮箱一样，明信片一般会送达收信人，但可能中途受损，有时会彻底寄丢，有时则比预期时间晚很多才会到达。（因特网协议有一种错误模式在明信片投递上不会出现：IP数据包可以复制，所以接收方可能会收到多份。）</p>
+<p>因特网协议提供的数据包传递服务是不可靠、无连接的。所谓“无连接”，就是说每个IP数据包都是独立的，和其他IP数据包无关。因特网协议没有状态或存储功能，这个协议一旦把数据包传给下一个网关，就不再需要存储关于这个数据包的任何信息。“不可靠”基本上是字面含义。因特网协议是个“尽力而为”型协议，并不能保证数据包传送的质量，出错也就出错了。数据包可能丢失或者损坏，接收到的顺序可能和发送的不一致，也许送达得太快而无法处理，也许送达得太慢而失去作用。当然，实际使用的时候，因特网协议是相当可靠的，但是当数据包中途丢失或损坏的时候，该协议确实不会尝试修复。这就像是在陌生的地方把明信片丢进邮箱一样，明信片一般会送达收信人，但可能中途受损，有时会彻底寄丢，有时则比预期时间晚很多才会到达。（因特网协议有一种错误模式在明信片投递上不会出现：IP数据包可以复制，所以接收方可能会收到多份。）</p>
+<p>IP数据包中有个很有趣的部分是TTL（Time To Live，生存时间）。TTL是个单字节区，由数据包的发送方设置一个初始值，每经过一跳网关就减1，当减到0的时候，就丢弃这个数据包，并给始发者返回一个报错数据包。因特网中一次典型的传包过程通常会经过15到20个网关，所以经过了255跳的数据包显然有问题，很可能是误入循环了。TTL并不能消除循环，但能防止个别数据包因为进入循环而永远存在。</p>
+<p>显然，如果应答本身丢失了，情况就会更复杂。TCP使用若干计时器来检测此类错误，计时器会设定特定的操作时间长度，超时就认为出错。如果某个操作耗时过长，就会启动恢复程序。最终，某个连接可能会因为“超时”而被终止（你也许在面对无响应网站时遇到过这种情况）。这些都是TCP协议的一部分。</p>
+<p>TCP协议同样还包含提高传输效率的机制。比如，发送方可以在未收到上个包的应答信息时就继续发送下个包，接收方也可以对接收到的一组包只回送一个应答。在通信顺畅的时候，这样做可以降低应答带来的经常性开支。而当网络发生拥塞、开始出现丢包现象时，发送方就迅速回退到较低速率，直到缓慢地一送一答。</p>
+<p>在两台计算机主机之间建立TCP连接时，不仅要指定计算机，还要指定计算机上的端口。每个端口表示一个独立的会话。端口用两字节（即16位）数表示，于是就有65536个可用端口。这样，在理论上每台主机可以同时承载65536个TCP会话。这就像是一个公司只有一条电话线路，但是每个员工有着不同的分机号一样。</p>
+<p>◆ 9.8 小结</p>
+<p>因特网背后只有很少的基本概念，如此少的机制却造就了如此规模的网络系统，令人惊叹（当然在这个过程中大量的工程必不可少）。因特网是一个由数据包构成的网络：信息被分成独立的标准化数据包传输，每个数据包都在动态路由的引导下通过不断变化的网络集合。这个模型和电话系统所使用的电路网完全不同，电话网中的每个会话都有一个专用电路，从概念上来说，对话所使用的线路是谈话双方私有的。</p>
+<p>协议和标准是因特网赖以生存的根本。IP是最常用的机制，也是信息交换的通行证。以太网和无线系统这样的特定硬件计算为IP数据包进行封装，但是在IP层面上看不到任何参与封装的特定硬件或是其工作原理。TCP利用IP为主机创造通往特定端口的可靠信息流，高层协议通过TCP&#x2F;IP产生服务。</p>
+<p>因特网隐私和安全太难了，我们将在接下来的3章中进一步进行讨论。这感觉就像是进攻者和防守者之间的一场军备竞赛，而进攻者往往是获胜的一方。数据在遍布全世界的媒介和网站之间穿行，这些媒介和网站是共享、不受管制的，因此这个过程中，可以把数据记录下来，在沿线的任何一点检查或是拦截数据，这些可能是出于商业或政府目的，甚至是犯罪企图。很难在数据传输的过程中对信息进行保护或是控制接触其的对象。很多网络技术都基于广播，这意味着在面对窃听时会不堪一击。对以太网的攻击需要找到合适的电缆以及物理连接，而攻击无线网络不需要物理接触即可进行嗅探。</p>
+<p>广义来说，因特网的总体结构和开放性使其在面对限制信息流通的国家级防火墙之类的政府控制时非常脆弱。网络管理上的压力也在持续增加，这个危机意味着官僚控制可能会胜过技术考量。这些控制越多，通用网络四分五裂的风险就越大，最终也就会变得毫无价值。</p>
+<p>◆ 第10章 万维网</p>
+<p>万维网的诞生可以追溯到1989年。当时，在日内瓦附近的欧洲核子研究中心（CERN）工作的英国物理学家蒂姆·伯纳斯–李，为便于通过因特网共享科学文献和研究结果而设计了一套系统，包括URL、HTTP和HTML，以及一个只能用文本模式查看可用资源的客户端。这套系统在1990年投入使用。我在1992年10月还亲眼见过有人使用它，说来惭愧，当时并没觉得它有那么好，也根本没想到在不到6个月之后诞生的第一个图形界面浏览器会改变世界。能够预见未来太可贵了！</p>
+<p>◆ 10.4 网页上的动态内容</p>
+<p>总体而言，JavaScript还是利大于弊的，虽然在有段时间我很担心JavaScript的负面影响，尤其是当你意识到它被用来跟踪上网浏览行为的频率是如此之高时，第11章将会谈到如何利用JavaScript进行跟踪。我隔三差五地彻底禁用JavaScript，然后又因为我关注的很多站点用到了它而重新启用。</p>
+<p>◆ 10.6 病毒、蠕虫和特洛伊木马</p>
+<p>随着微软在Office程序尤其是Word中包含Visual Basic，病毒的传播更加容易了。由于Word中内建VB解释器（至今仍在），Word（.doc、.docx文件）、Excel和PowerPoint文档中可以包含VB程序，因此写个程序在文档打开时获取控制易如反掌。而且，由于VB能访问Windows操作系统的全部功能，这类程序可以在操作系统中为所欲为。一般来说，病毒会首先安装在本机上，然后想方设法传播到别的系统上。一种常见的病毒传播模式是，当用户打开被感染的文件后，病毒把自己附在一封写着无害或诱惑言辞的电子邮件里，寄给被攻击邮件地址簿里的每个人。（安娜·库尔尼科娃病毒就是这么做的。）如果收件人打开附件里的文档，病毒就把自己装进新系统，进而传播开来。</p>
+<p>2010年年底，在伊朗的一些过程控制计算机中发现了一个叫“震网”（Stuxnet，也称为“超级工厂”）的复杂蠕虫。它的主要攻击目标是伊朗的铀浓缩设备。“震网”用了一个很狡猾的攻击方法，即引起离心机的转速波动，这看上去只会引起正常磨损，却会导致离心机损坏甚至报废；同时，向监控系统报告运行正常，于是没人注意到离心机出现问题。至今仍然没有人站出来承认对此负责。</p>
+<p>◆ 10.7 网络安全</p>
+<p>要编造一封看起来正规的邮件很容易，版式和图片都可以从真的网站上复制。使用无效的回信地址也很容易，因为邮件系统发件时并不检查发件人的真实性。那个链接下面的IP地址指向一个美国之外的网站，而我是在检查了HTML源代码后用traceroute才发现这一点的。和垃圾邮件一样，钓鱼也几乎不花任何成本，即便上钩的人少之又少，也足够骗子们赚个盆满钵溢了。图10-5这个例子明显是诈骗邮件，更加仔细的有目的攻击会更难察觉。在2010年年末，我收到了图10-6中的这封信。一位朋友发来的这封信，该信是群发给一个很小的私密邮件列表的。</p>
+<p>◆ 10.9 小结</p>
+<p>万维网引发了很多难解的司法管辖权问题。例如在美国，很多州对其境内的买卖征收营业税，但是网上商店并不会对来自大部分州的买家收营业税，依据是他们在买家所在的州并没有实体商铺，因而无须帮那个州的税务局代为收税。按理说，买家应该自己上报外地购物记录并依法纳税，但没人这么做。</p>
+<p>◆ 11.6 小结</p>
+<p>“举手之劳，无不可及”曾是AT&amp;T在20世纪80年代的一句广告语，宣传效果非常好。今天，万维网、电子邮件、社交网站、云计算都可以实现这个愿景。有时候，这幅图景很美好。你可以在比以前大得多的圈子里交朋友，分享自己的兴趣爱好。然而，举手之劳也可以让你在世界面前暴露无遗，而并不是每个人都对你那么友好。垃圾邮件、欺诈、间谍软件、病毒、监视、冒名顶替、泄露隐私信息，甚至遗失财产，种种不幸都会接踵而来。小心谨慎才是明智之举。</p>
+<p>◆ 12.1 加密</p>
+<p>现代密码学必须假定攻击者知道并完全理解密码系统的工作原理，从而将所有的安全性都寄托在密钥上。与此相反的做法是，假定对手不知道系统用什么加密方案、如何破解，这被称为隐匿式安全，这种方法在经历较长时间后往往会失败。苏格兰女王玛丽、山本五十六和德军都没有重视这个至关重要的事实，并为此付出了致命的代价。实际上，如果有人鼓吹他们的加密系统十分安全，却不愿说出其工作原理，那就可以确信它并不安全。</p>
+<p>加密系统开发的公开性也很重要。加密系统需要尽可能多的专家以及他们的专业经验以寻求可能的薄弱点。即使这样，确保系统正常工作也不容易。算法的弱点会在初始开发和分析之后很久才暴露出来。代码中会出现漏洞，然后出于意外或是恶意将有漏洞的代码插入系统之中。除此之外，可能存在有意识地尝试削弱加密系统的情况，例如当美国国家安全局在尝试定义一个重要加密标准中随机数字生成器的关键参数时。</p>
+<p>公钥加密是在因特网上进行安全通信的关键要素。设想我准备在网上买一本书。我得告诉亚马逊网站我的信用卡号，但我并不想发送明文，这样就需要使用加密的通信通道。直接使用AES是不可能的，因为我和亚马逊之间没有共享密钥。为了商定共享密钥，我的浏览器必须首先随机生成一个临时口令，并用亚马逊的公钥加密这个临时口令，然后把加密后的结果传给亚马逊。亚马逊用它的私钥解出临时口令后，我的浏览器和亚马逊就可以在AES算法中用这个临时口令来加密要传送的信息，比如我的信用卡号。公钥加密的主要缺点是算法的运算速度慢，比AES这种密钥加密算法要慢好几个数量级。因此，通常不会用公钥加密算法加密全部数据，而是分两步走：先用公钥加密协商出一个临时的会话密钥，再用AES加密接下来要批量传输的数据。上述加密过程的两个阶段——首先是用公钥加密算法设置临时口令，然后再用AES交换大量数据——都是安全的</p>
+<p>另外，Alice还可以给Bob签署一条私人消息，让除Bob之外的人都无法看到，而Bob不仅能看到该消息，还能验证确实是Alice发给他的。具体做法是：Alice先用Bob的公钥加密这条消息，然后用自己的私钥签署加密后的结果。Eve虽然可以看见Alice给Bob发了一些信息，但只有Bob能用Alice的公钥验证消息确实来自Alice，再用自己的私钥解开密文。</p>
+<p>之前的消息，即使得到了私钥也没用。最常用的公钥加密算法是RSA，这个算法是麻省理工学院的三位计算机科学家罗纳德·李维斯特、阿迪·沙米尔和伦纳德·阿德曼1978年发明的，RSA就是这三位发明人姓氏的首字母缩写。RSA算法的可靠性来自于对巨大合数做因数分解的难度。RSA的工作原理是生成一个很大的整数（比如长度为500位），这个整数要有两个质因子（长度约为二者乘积的一半），以此作为生成公钥和私钥的基础。知道这两个质因子的人（即私钥的主人）能迅速解开密文，其他人要解密就得先分解质因子。由于计算量过大，这实际上是不可能完成的，或者最起码是我们认为无法完成的。李维斯特、沙米尔和阿德曼因为发明RSA算法而获得了2002年图灵奖。在RSA算法中，密钥的长度很重要。据我们目前所知，要想对由两个大小相当的质数相乘得到的大整数进行因式分解，所需的工作量会随着数位的增长而快速增长，因此通过因式分解来破解密钥几乎是不可行的。RSA实验室是持有RSA专利的公司，它曾举办过分解因式大赛，从1991年一直办到2007年。它公布了一个列表，上面是越来越长的巨大合数，设立奖金悬赏能分解开每个合数的第一人。</p>
+<p>◆ 第13章 结束语</p>
+<p>“进行预测很难，尤其是对未来进行预测。”——献给Yogi Berra、Niels Bohr、Samuel Goldwyn和Mark Twain及其他人</p>
+<p>外在形态的细节无时无刻不在变化。我们讲到的很多技术要点只是为了帮助大家理解事物背后的工作原理，这些地方不必过于深究。毕竟，大多数人容易理解具体的事例，不容易明白抽象的概念。而计算机领域中抽象的概念实在是太多了。</p>
+<p>通信系统无所不在，它在本地和世界各处运行。重要的是理解其中的信息流动、谁能够查看这些信息，以及信息是如何得到控制的。协议（即系统之间交换信息的规则）也非常重要。协议的特性影响深远，由今天因特网中的身份认证问题可见一斑。</p>
+<p>计算机系统是工程权衡的很好实例。这提醒我们，设计中永远不可能处处如意，天下没有免费的午餐。台式电脑、笔记本电脑、平板电脑和手机，虽然同是计算设备，但它们在尺寸、重量、计算能力和成本等约束条件上，则分别做出了明显不一样的取舍。</p>
+<p>个人隐私不断受到来自商业和政府机构的威胁。针对个人数据的大范围收集还会继续增长，而个人隐私保护可能会比现在的状况更不乐观。因特网从一开始就让人很容易匿名，特别是一些不良行为，要想匿名很容易。不过今天，即使是善意的行为，想要真正匿名都很困难。某些国家政府要求控制公民的因特网使用，以及弱化加密技术，这些非但不会给好人带来益处，反而给坏人提供了帮助和支持，在这种情况下，只要发现一处弱点，就会被其利用。仅此一点，就没有什么可取之处。大大小小的公司都渴望尽可能多地了解当前和潜在用户的情况。信息一旦上网，则永远无法消除。没有什么可行的办法能召回数据。</p>
+<p>监控技术。微型摄像头和麦克风，以及通过网页跟踪记录手机位置等监控技术一直在改进，而急遽降低的存储成本和处理成本，让完整地跟踪拍摄一个人的日常生活并将其数字化变得越来越可行。如果要把你有生以来的所见所闻全部拍成视频保存起来，得需要多大的硬盘，这么大的存储空间花费几何？假设你今年20岁，那么需要的硬盘是10TB，购买这么大的存储空间在今天只要300美元，而且等你看到这些文字时一定还会更便宜。好啦，就算是把一个人一辈子都录成视频，多花10倍、20倍也绝对足够了。</p>
+<p>对于个人、集团和政府来说，安全也是个持续的问题。我不确定像网络战这样的术语，或者说网络的任何东西都是有帮助的。但可以肯定的是，个人和更大的群体都面临着某些来自国家安全机关和有组织的犯罪分子的潜在攻击，这些攻击可能而且常常是网络攻击。不良的安全做法使我们的信息很容易遭到政府和商业数据库的窃取。</p>
+<p>最后，读者请务必牢记一点，无论今天的技术多么千变万化，人是不变的。无论是从哪方面来看，现代的人类与几千年前的人类并没有太大区别，好人和坏人的多少，遵从好的动机和坏的动机行事的人数，从总体比例上而言并没有改变多少。社会、法律和政治都在适应技术变革，但这是个缓慢的过程，步调并不一致，而且世界不同角落的解决方案也各不相同。未来几年的发展变化一定会更加激动人心。希望本书能够帮上你的忙，让你能够更加明智地预见、应对并积极影响其中一些不可避免的变化。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%BB%E4%B9%A6/" class="category-chain-item">读书</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%BD%AC%E8%BD%BD/">#转载</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>读书-普林斯顿计算机公开课</div>
+      <div>http://example.com/2022/02/15/读书-普林斯顿计算机公开课/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>darkscope</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年2月15日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/05/02/%E6%9D%82%E8%B0%88-%E5%9C%B0%E8%A1%A8%E6%B8%B8%E8%AE%B0-%E6%88%90%E9%83%BD%E8%87%B3%E8%8C%B6%E5%8D%A1%E7%9B%90%E6%B9%96/" title="地表游记-成都至茶卡盐湖">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">地表游记-成都至茶卡盐湖</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/02/15/%E8%BD%AC%E8%BD%BD-%E5%88%98%E7%91%9C%E3%80%8A%E6%84%BF%E4%BD%A0%E6%85%A2%E6%85%A2%E9%95%BF%E5%A4%A7%E3%80%8B/" title="转载-刘瑜《愿你慢慢长大》">
+                        <span class="hidden-mobile">转载-刘瑜《愿你慢慢长大》</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    
+      <script type="text/javascript">
+        var disqus_config = function() {
+          this.page.url = 'http://example.com/2022/02/15/%E8%AF%BB%E4%B9%A6-%E6%99%AE%E6%9E%97%E6%96%AF%E9%A1%BF%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%85%AC%E5%BC%80%E8%AF%BE/';
+          this.page.identifier = '/2022/02/15/%E8%AF%BB%E4%B9%A6-%E6%99%AE%E6%9E%97%E6%96%AF%E9%A1%BF%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%85%AC%E5%BC%80%E8%AF%BE/';
+        };
+        Fluid.utils.loadComments('#disqus_thread', function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//' + 'fluid' + '.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', new Date());
+          (d.head || d.body).appendChild(s);
+        });
+      </script>
+    
+    <noscript>Please enable JavaScript to view the comments</noscript>
+  </div>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
